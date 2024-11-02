@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+        margin: 0;
+        padding: 0; 
+        box-sizing: border-box;
+        }
+
+        body{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Comic Sans MS', sans-serif;
+        gap: 1rem;
+        min-height: 100vh;
+        padding: 1rem;
+        background-color: white;
+        }
+
+        .contain{
+            display: flex;
+            flex-grow: 1;
+            gap: 1rem;
+        }
+
+        header,
+        footer{
+            color: aliceblue;
+            padding: 1rem;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            flex-grow: 1;
+            margin: 1rem 0;
+            box-shadow:0 4px 8px #0077ea;
+        }
+
+        header{
+            background: #1e90ff;
+            box-shadow: #0077ea;
+        }
+
+        footer{
+            background: #4169e1;
+            box-shadow: #1d44b8;
+        }
+
+        main{
+            background: #3cb371;
+            color: aliceblue;            
+            padding: 1rem;
+            flex-flow: 1;
+            display:flew;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px #2f8d59;
+
+        }
+
+        .items-container{
+            padding-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .item{
+            background: #2f8d59;
+            padding: 1rem;
+            width: calc(25% - 1rem);
+            height: 100px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px #226741;
+            align-content: center;
+            text-align: center;
+        }
+
+        sidebar{
+            background: #ff6347;
+            color:aliceblue;
+            padding: 1rem;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 0.5rem;
+            box-shadow: #e02200;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>Header</header>
+        <div class = "contain">
+            <main>Main
+                <div class = "items-container">
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                </div>
+            </main>
+            <sidebar>Sidebar</sidebar>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
